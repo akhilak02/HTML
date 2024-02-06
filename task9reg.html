@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reg Form</title>
     <style>
-      form {
-        width: 80%;
+      table,
+      td {
         /* background-color: aqua; */
         margin: auto;
       }
@@ -15,77 +15,119 @@
       h5 {
         text-align: center;
       }
+      span {
+        color: gray;
+      }
     </style>
   </head>
   <body>
     <h1>Online Job Registration Portal</h1>
     <h5>Register yourself to get new job updates</h5>
     <hr />
-    <form action="">
-      <table cellpadding="10">
-        <tr>
-          <th><label for="">Full Name:</label></th>
-          <td><input type="text" placeholder="First Name" /></td>
-          <td><input type="text" placeholder="Last Name" /></td>
-        </tr>
-
-        <tr>
-          <th><label for="">Address :</label></th>
-          <td><input type="text" placeholder="streetAddress" size="50" /></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>
-            <input type="text" placeholder="streetAddress Line2" size="50" />
-          </td>
-        </tr>
-        <tr>
-          <th></th>
-          <td><input type="text" placeholder="city" size="25" /></td>
-          <td><input type="text" placeholder="state" size="25" /></td>
-        </tr>
-        <th></th>
-        <td><input type="text" placeholder="pin Code" /></td>
+    <!-- <form action=""> -->
+    <table cellpadding="10">
+      <tr>
+        <th><label for="">Full Name:</label></th>
         <td>
-          <select name="" id="">
-            <option value="">please Select</option>
-            <option value="">India</option>
-            <option value="">America</option>
-            <option value="">China</option>
-          </select>
+          <input type="text" /><br />
+          <span>First Name</span>
         </td>
+        <td>
+          <input type="text" /><br />
+          <span>Last Name</span>
+        </td>
+      </tr>
 
-        <tr>
-          <th><label for="">Phone Number: </label></th>
+      <tr>
+        <th><label for="">Address :</label></th>
+        <td>
+          <input type="text" size="35" /><br />
+          <span>StreetAddress</span>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="text" size="35" /><br />
+          <span>StreetAddress Line2</span>
+        </td>
+      </tr>
+      <tr>
+        <th></th>
+        <td>
+          <input type="text" size="25" /><br />
+          <span>City</span>
+        </td>
+        <td>
+          <input type="text" size="25" /><br />
+          <span>State</span>
+        </td>
+      </tr>
+      <th></th>
+      <td>
+        <input type="text" /><br />
+        <span>Pin Code</span>
+      </td>
+      <td>
+        <select name="" id="">
+          <option value="">please Select</option>
+          <option value="">India</option>
+          <option value="">America</option>
+          <option value="">China</option></select
+        ><br />
+        <span>Country</span>
+      </td>
 
-          <td><input type="text" placeholder="Area Code" /></td>
-          <td><input type="text" /></td>
-        </tr>
-        <tr>
-          <th><label for="">Mobile: </label></th>
-          <td><input type="text" /></td>
-        </tr>
-        <tr>
-          <th><label for="">E-mail:</label></th>
-          <td><input type="text" placeholder="ex:myname@example.com" /></td>
-        </tr>
-        <tr>
-          <th><label for="">Cover Letter</label></th>
-          <td><textarea name="" id="" cols="40" rows="5"></textarea></td>
-        </tr>
-        <tr>
-          <th><label for="Resume"></label></th>
-          <td><input type="file" value="Browse.." /></td>
-        </tr>
-        <tr>
-          <th>Declaration</th>
-          <td>
-            <input type="checkbox" />The above information filled by me is true
-            . I also accept all the terms and conditions
-          </td>
-          <td><input type="submit" value="Reset" /></td>
-        </tr>
-      </table>
-    </form>
+      <tr>
+        <th><label for="">Phone Number: </label></th>
+
+        <td>
+          <input type="text" /> -<br />
+          <span>Area Code</span>
+        </td>
+        <td>
+          <input type="text" /><br />
+          <span>Phone Number</span>
+        </td>
+      </tr>
+      <tr>
+        <th><label for="">Mobile: </label></th>
+        <td><input type="text" /></td>
+      </tr>
+      <tr>
+        <th><label for="">E-mail:</label></th>
+        <td><input type="text" placeholder="ex:myname@example.com" /></td>
+      </tr>
+      <tr>
+        <th><label for="">Cover Letter</label></th>
+        <td>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="5"
+            placeholder="Describe yourself in brief(max.450 charecters)"
+          ></textarea>
+        </td>
+      </tr>
+      <tr>
+        <th><label for="Resume"></label></th>
+        <td><input type="file" value="Browse.." /></td>
+      </tr>
+      <tr>
+        <th>Declaration</th>
+        <td>
+          <input type="checkbox" />The above information filled by me is true .
+          <br />
+          I also accept all the terms and conditions
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" value="submit Form" /></td>
+        <td><input type="submit" value="Reset" /></td>
+      </tr>
+    </table>
+    <!-- </form> -->
   </body>
 </html>

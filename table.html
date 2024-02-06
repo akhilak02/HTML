@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+
+    <style>
+      table,
+      caption,
+      td,
+      th {
+        border: 2px solid blueviolet;
+        margin: auto;
+        border-collapse: collapse;
+        background-color: palevioletred;
+        color: white;
+        margin-top: 150px;
+      }
+      th {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <table cellpadding="15px">
+      <caption>
+        Student
+      </caption>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Email</th>
+        <th>Age</th>
+      </tr>
+
+      <tr>
+        <td rowspan="2">Anu</td>
+        <td>anu@gmail.com</td>
+        <td>23</td>
+      </tr>
+
+      <tr>
+        <td>Vinu</td>
+        <td>Vinu@gmail.com</td>
+        <td>21</td>
+      </tr>
+
+      <tr>
+        <td>Appu</td>
+        <td>appu@gmail.com</td>
+        <td>25</td>
+      </tr>
+    </table>
+  </body>
+</html>

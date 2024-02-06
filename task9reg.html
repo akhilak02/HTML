@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reg Form</title>
+    <style>
+      form {
+        width: 80%;
+        /* background-color: aqua; */
+        margin: auto;
+      }
+
+      h1,
+      h5 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Online Job Registration Portal</h1>
+    <h5>Register yourself to get new job updates</h5>
+    <hr />
+    <form action="">
+      <table cellpadding="10">
+        <tr>
+          <th><label for="">Full Name:</label></th>
+          <td><input type="text" placeholder="First Name" /></td>
+          <td><input type="text" placeholder="Last Name" /></td>
+        </tr>
+
+        <tr>
+          <th><label for="">Address :</label></th>
+          <td><input type="text" placeholder="streetAddress" size="50" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="text" placeholder="streetAddress Line2" size="50" />
+          </td>
+        </tr>
+        <tr>
+          <th></th>
+          <td><input type="text" placeholder="city" size="25" /></td>
+          <td><input type="text" placeholder="state" size="25" /></td>
+        </tr>
+        <th></th>
+        <td><input type="text" placeholder="pin Code" /></td>
+        <td>
+          <select name="" id="">
+            <option value="">please Select</option>
+            <option value="">India</option>
+            <option value="">America</option>
+            <option value="">China</option>
+          </select>
+        </td>
+
+        <tr>
+          <th><label for="">Phone Number: </label></th>
+
+          <td><input type="text" placeholder="Area Code" /></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <th><label for="">Mobile: </label></th>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <th><label for="">E-mail:</label></th>
+          <td><input type="text" placeholder="ex:myname@example.com" /></td>
+        </tr>
+        <tr>
+          <th><label for="">Cover Letter</label></th>
+          <td><textarea name="" id="" cols="40" rows="5"></textarea></td>
+        </tr>
+        <tr>
+          <th><label for="Resume"></label></th>
+          <td><input type="file" value="Browse.." /></td>
+        </tr>
+        <tr>
+          <th>Declaration</th>
+          <td>
+            <input type="checkbox" />The above information filled by me is true
+            . I also accept all the terms and conditions
+          </td>
+          <td><input type="submit" value="Reset" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
